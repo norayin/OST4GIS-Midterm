@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: Verdana;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 340px;
+    height: 100%;
+    top: 0;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0px;
+    width: 340px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #313541;
+    top:50px;
+    font-size: 0;
+    /*
+    background-image: url('bgimage3.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+}
+
+.header {
+  background-color: #282C37;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 50px;
+  padding: 6px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 20px;
+  color:#FFFFF0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+p {
+  font-weight: normal;
+  color:#D9E1E8;
+  font-size: 15px;
+  text-align: left;
+}
+
+.slide-name {
+  font-size: 20px;
+  color: #FFFFF0;
+}
+
+.description {
+  color: #D9E1E8;
+}
+
+button {
+    background-color: #f1f1f1;
+    border: 2px solid;
+    color: #555555;
+    padding: 6px 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: #ddd;
+    color:white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#button-previous {
+  position:absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+#button-next {
+  position:absolute;
+  bottom: 40px;
+  left: 275px;
+}
+
+.legend {
+  position: absolute;
+  background-color: #fff;
+  z-index: 2000;
+  padding-left: 10px;
+  /* get rid of the dot before list */
+  list-style: none;
+  right: 20px;
+  bottom: 30px;
+}
+
+.legend li {
+  /*float: left;*/
+  margin-right: 10px;
+  margin-bottom: 10px;
+  z-index: 2000;
+  font-size: 14px;
+}
+
+/* create a legend box */
+.legend span {
+  float: left;
+  width: 20px;
+  height: 12px;
+  margin: 3px;
+}
+
+/* assign lendent box colors */
+.legend .Richmond { background-color: #FFED6F; }
+.legend .CenterCity{ background-color: #8DD3C7; }
+.legend .ChestnutHill { background-color: #BC80BD; }
+.legend .LNortheast { background-color: #A8B6C0; }
+.legend .North { background-color: #FCCDE5; }
+.legend .Northeast { background-color: #80B1D3; }
+.legend .Northwest { background-color: #D0533D; }
+.legend .OakLane { background-color: #CCEBC5; }
+.legend .Manayunk { background-color: #B3DE69; }
+.legend .South { background-color: #FB8072; }
+.legend .Southwest { background-color: #BEBADA; }
+.legend .West { background-color: #FDB462; }
+
+.list {
+  background-color:#424757;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 15px
+}
+
+.nc {
+  font-size:14px;
+  font-style: italic;
+  color:white;
+}
+
+#neighborhood-count-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weekend-name {
+  font-size:18px;
+  font-weight: bold;
+}
+
+.weekend-day {
+  font-size:14px;
+  font-style: italic;
+  color:white;
+  margin-bottom:0;
+}
+
+.weekend-address {
+  font-size:14px;
+  color:white;
+  font-style: italic;
+  margin-top:0;
+}
+
+.blank {
+  font-size: 12px;
+  margin:10px;
+}
+
+*:focus {outline:none}

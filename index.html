@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Story Map Title -->
+    <div class="header">A GUIDE FOR YOU - PHILADELPHIA FARMERS MARKET</div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="farmers_market.png" width="60" height="70" style="float:left;"/>
+      <!-- Side Name and Description-->
+      <div id="description-slide1">
+        <h2 id="slide-name-1" class="slide-name">Farmers Market Locations<h2>
+        <p id="description-1" class="description">Farmers market, a physical marketplace
+        intended to sell food directly by farmers to consumers, is one of the ways to provide
+        fresh, healthy and locally grown food for all. It can not only offer
+        fresher, seasonal, healthier and a better variety of foods, but also serve as a place
+        to meet neighbors and to enjoy an outdoor walk while getting needed groceries. In
+        response to the challenge of ensuring access to healthy food for all, the Philadelphia
+        Food Trust has set up numerous farmers markets throughout Philadelphia.
+        </p>
+        <p class="description">
+        The map on the right shows you all farmers markets locations in Philadelphia. By clicking
+        the location markers, you can see the name and address of each farmers market, and the bus
+        or subway routes that can take you there.
+        </p>
+      </div>
+      <div id="description-slide2" style="display:none">
+        <h2 id="slide-name-2" class="slide-name">Farmers Market Open Hours<h2>
+        <p id="description-2" class="description">Let's take a closer look at the farmers markets.
+        </p>
+        <p class="description">
+        Wondering when these farmers market will open? Click each location marker, you can see the
+        open months, days and hours for each farmers market in philadelphia.
+        </p>
+      </div>
+      <div id="description-slide3" style="display:none">
+        <h2 id="slide-name-3" class="slide-name">Farmers Markets Open on Weekends<h2>
+        <p id="description-3" class="description">It is a good idea to visit farmers markets
+        with your families on a beautiful weekend morning, so you may wonder which farmers
+        markets are open on weekends.
+        </p>
+        <p class="description">
+        The map summarises for you all farmers markets open on weekends. Click the ones you are interested,
+        and you will find more detailed open hour information about it.
+        </p>
+      </div>
+      <div id="description-slide4" style="display:none">
+        <h2 id="slide-name-4" class="slide-name">Farmers Market by Neighborhood<h2>
+        <p id="description-4" class="description">Wondering how many and which farmers markets
+        are located in your neighborhood? See the map on the right and the list below!
+        </p>
+        <div class="list" id="neighborhood-count">
+          <p id=neighborhood-count-title>Number of Farmers Markets by Neighborhood</p>
+          <p class="nc" id="neighborhood-count-0"></p><p class="nc" id="neighborhood-count-1"></p>
+          <p class="nc" id="neighborhood-count-2"></p><p class="nc" id="neighborhood-count-3"></p>
+          <p class="nc" id="neighborhood-count-4"></p><p class="nc" id="neighborhood-count-5"></p>
+          <p class="nc" id="neighborhood-count-6"></p><p class="nc" id="neighborhood-count-7"></p>
+          <p class="nc" id="neighborhood-count-8"></p><p class="nc" id="neighborhood-count-9"></p>
+          <p class="nc" id="neighborhood-count-10"></p><p class="nc" id="neighborhood-count-11"></p>
+        </div>
+        <div class="blank"><br>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div id="description-slide5" style="display:none">
+        <h2 id="slide-name-5" class="slide-name">Farmers Market in Center City<h2>
+        <p id="description-5" class="description">If you are new to Philadelphia, you can go
+        sightseeing in the center of Philadelphia while visiting our lovely farmers markets.
+        The map on the right and the list below summarise for you all farmers markets located
+        in Center City neighborhood.
+        </p>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-0"></p>
+          <p class="weekend-day" id="weekend-day-0"></p>
+          <p class="weekend-address" id="weekend-address-0"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-1"></p>
+          <p class="weekend-day" id="weekend-day-1"></p>
+          <p class="weekend-address" id="weekend-address-1"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-2"></p>
+          <p class="weekend-day" id="weekend-day-2"></p>
+          <p class="weekend-address" id="weekend-address-2"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-3"></p>
+          <p class="weekend-day" id="weekend-day-3"></p>
+          <p class="weekend-address" id="weekend-address-3"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-4"></p>
+          <p class="weekend-day" id="weekend-day-4"></p>
+          <p class="weekend-address" id="weekend-address-4"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-5"></p>
+          <p class="weekend-day" id="weekend-day-5"></p>
+          <p class="weekend-address" id="weekend-address-5"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-6"></p>
+          <p class="weekend-day" id="weekend-day-6"></p>
+          <p class="weekend-address" id="weekend-address-6"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-7"></p>
+          <p class="weekend-day" id="weekend-day-7"></p>
+          <p class="weekend-address" id="weekend-address-7"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-8"></p>
+          <p class="weekend-day" id="weekend-day-8"></p>
+          <p class="weekend-address" id="weekend-address-8"></p>
+        </div>
+        <br>
+        <div class="list">
+          <p class="weekend-name" id="weekend-name-9"></p>
+          <p class="weekend-day" id="weekend-day-9"></p>
+          <p class="weekend-address" id="weekend-address-9"></p>
+        </div>
+        <div class="blank"><br>
+          <br>
+          <br>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Button -->
+    <div class = "buttons">
+        <button id="button-previous" class = "buttons" style="display:none">&#8249;</button>
+        <button id="button-next" class = "buttons" style="display:none">&#8250;</button>
+   </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Legend -->
+    <div class="legend" id="legend" style="display:none">
+      <h4 class = "legend-title">LEGEND</h4>
+      <li><span class="Richmond"></span> Bridesburg Kensington Port Richmond</li>
+      <li><span class="CenterCity"></span> Center City</li>
+      <li><span class="ChestnutHill"></span> Germantown Chestnut Hill</li>
+      <li><span class="LNortheast"></span> Lower Northeast</li>
+      <li><span class="North"></span> North</li>
+      <li><span class="Northeast"></span> Northeast</li>
+      <li><span class="Northwest"></span> Northwest</li>
+      <li><span class="OakLane"></span> Olney Oak Lane</li>
+      <li><span class="Manayunk"></span> Roxborough Manayunk</li>
+      <li><span class="South"></span> South</li>
+      <li><span class="Southwest"></span> Southwest</li>
+      <li><span class="West"></span> West</li>
+    </div>
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/midtermFunctions.js"></script>
+    <script src="js/slideModel.js"></script>
+  </body>
+</html>
